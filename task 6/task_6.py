@@ -7,11 +7,11 @@ my_server = SMTP_SSL(host='smtp.gmail.com')
 
 # list required of vaiable for email
 
-password = 'google@Suyash1234'
-username = 'suyash98garg@gmail.com'
+password = ''
+username = ''
 
-send_to = 'suyash98garg@gmail.com'
-send_by = 'suyash98garg@gmail.com'
+send_to = ''
+send_by = ''
 
 body = 'Welcome Back'
 subject = 'Welcome'
@@ -19,7 +19,7 @@ subject = 'Welcome'
 # list required variable for whatsapp
 
 # enter the phone number of the person you want to send the message
-contact_number = '7742385251'
+contact_number = ''
 message = 'Welcome Back'
 
 # model parameter
