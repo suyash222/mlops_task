@@ -6,6 +6,8 @@ from os.path import isfile, join
 #name of the file
 model_name = 'suyash.xml'
 
+
+# code that train the model
 try:
     makedirs('faces\user')
 except:
