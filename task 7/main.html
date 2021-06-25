@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>My page</title>
+    <script src="my.js"></script>
+    <link rel="stylesheet" href="new.css">
+    <script src="my_event.js"></script>
+
+</head>
+<body>
+
+    <div id='output'></div>
+
+    <div>
+        <button onclick="show_run_cont()">Show Only Running Containers</button>
+        <br>
+        <button onclick="show_cont()">Show all Container</button>
+    </div>
+
+    <br>
+
+    <div>
+        <button onclick="show_img()">Show all Docker Images</button>
+        <br>
+        Enter Command:<input type="text" id='cmd'>
+        <br>
+        <button onclick="sub_cmd()">Enter</button>
+    </div>
+
+    <br>
+
+    <div>
+        Enter Container Name or ID to Delete<input type="text" id='cont_name'>
+        <br>
+        <button onclick="del_cont()">Enter</button>
+    </div>
+
+    <br>
+
+    <div>
+        <div class="form">
+            <label for="img_name">Enter Image Name:</label>
+            <input type="text" id="img_name" name="img_name">
+            <br>
+            <label for="container_name">Enter Containers Name:</label>
+            <input type="text" id="container_name" name="container_name">
+            <br>
+            <button name="mybtn" onclick="lanuch_container()">Click to launch Container</button>
+        </div>
+    </div>
+
+    <br>
+
+    <div>
+        <div class="inside">
+            <label for="con_name">Enter Container/Image Name:</label>
+            <input type="text" id="con_name" name="con_name">
+            <br>
+            <label for="command">Enter Command to run inside Container:</label>
+            <input type="text" id="command" name="command">
+            <br>
+            <button name="mybtn" onclick="run_command()">Click to Run Commmand</button>
+        </div>
+    </div>
+
+</body>
+</html>
