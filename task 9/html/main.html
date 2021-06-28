@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>My page</title>
+    <script src="my.js"></script>
+    <link rel="stylesheet" href="new.css">
+    <script src="my_event.js"></script>
+
+</head>
+<body>
+
+    <div id='output'></div>
+
+    <div>
+        <button onclick="show_all_deplo()">Show all Deployment</button>
+        <br>
+        <button onclick="show_pods()">Show all Pods</button>
+        <br>
+        <button onclick="get_service()">Show all the service</button>
+        <br>
+        <button onclick="delete_all()">Click to delete everything</button>
+    </div>
+
+    <br>
+
+    <div>
+        Enter Command:<input type="text" id='cmd'>
+        <br>
+        <button onclick="sub_cmd()">Enter</button>
+    </div>
+
+    <br>
+
+    <div>
+        Enter Deployment Name to Delete<input type="text" id='del_deplo'>
+        <br>
+        <button onclick="del_deplo()">Enter</button>
+    </div>
+
+    <br>
+
+    <div>
+        <div>
+            <label for="image_name">Enter Image Name:</label>
+            <input type="text" id="image_name" name="image_name">
+            <br>
+            <label for="deployment_name">Enter Deployment Name:</label>
+            <input type="text" id="deployment_name" name="deployment_name">
+            <br>
+            <button name="mybtn" onclick="create_deployment()">Click to Create Deployment</button>
+        </div>
+    </div>
+
+    <br>
+
+    <div>
+        <div>
+            <label for="pod_image_name">Enter Image Name:</label>
+            <input type="text" id="pod_image_name" name="pod_image_name">
+            <br>
+            <label for="pod_name">Enter Pod Name:</label>
+            <input type="text" id="pod_name" name="pod_name">
+            <br>
+            <button name="mybtn" onclick="create_pod()">Click to Create Pod</button>
+        </div>
+    </div>
+
+    <br>
+
+    <div>
+        <div>
+            <label for="scale_deployment_name">Enter Deployment name to scale:</label>
+            <input type="text" id="scale_deployment_name" name="scale_deployment_name">
+            <br>
+            <label for="sacle_no">Enter number to scale:</label>
+            <input type="number" id="sacle_no" name="sacle_no">
+            <br>
+            <button name="mybtn" onclick="scale_deployment()">Click to Scale Deploymet</button>
+        </div>
+    </div>
+
+    <br>
+
+    <div>
+        <div>
+            <label for="expose_deployment_name">Enter Deployment name to Expose:</label>
+            <input type="text" id="expose_deployment_name" name="expose_deployment_name">
+            <br>
+            <label for="port_no">Enter Port number:</label>
+            <input type="number" id="port_no" name="port_no" required>
+            <br>
+            <button name="mybtn" onclick="expose_deployment()">Click to Expose Deploymet</button>
+        </div>
+    </div>
+
+    <br>
+
+    <div>
+        <div>
+            <label for="service">Enter Service to delete:</label>
+            <input type="text" id="service" name="service">
+            <br>
+            <label for="service_name">Enter Service name to delete:</label>
+            <input type="text" id="service_name" name="service_name">
+            <br>
+            <button name="mybtn" onclick="delete_service()">Click to delete service</button>
+        </div>
+    </div>
+</body>
+</html>
